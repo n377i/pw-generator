@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  gap: 1rem;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+p {
+  margin: 0;
+}
+
+.password {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 8px;
+  min-height: 40px;
+}
+
+@media screen and (min-width: 460px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 16px;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .15);
+    padding: 32px;
+    width: 400px;
+    margin: 32px auto;
+  }
+
+  h1,
+  .password,
+  .length {
+    grid-column: span 2;
+  }
+}
