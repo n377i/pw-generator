@@ -12,7 +12,21 @@
     <div class="container">
       <h1>Password Generator</h1>
       <p id="password" class="password"></p>
-      <input id="length" class="length" type="number" min="8" max="32">
+      <div class="settings">
+        <label for="length">Length</label>
+        <input id="length" type="number" min="8" max="32">
+      </div>
+      <div class="settings">
+        <label>Options</label>
+        <span class="checkbox">
+          <label for="numbers">Numbers</label>
+          <input id="numbers" type="checkbox" checked>
+        </span>
+        <span class="checkbox">
+          <label for="numbers">Symbols</label>
+          <input id="symbols" type="checkbox" checked>
+        </span>
+      </div>
       <button id="generate">Generate</button>
       <button id="copy">Copy</button>
     </div>
