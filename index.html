@@ -13,11 +13,11 @@
       <h1>Password Generator</h1>
       <p id="password" class="password"></p>
       <div class="settings">
-        <label for="length">Length</label>
-        <input id="length" type="number" min="8" max="32">
+        <label for="length" class="label">Length</label>
+        <span class="slider"><input id="length" class="length" type="range" min="8" max="32" value="20"> <output for="length" id="output">20</output></span>
       </div>
       <div class="settings">
-        <label>Options</label>
+        <label class="label">Options</label>
         <span class="checkbox">
           <label for="numbers">Numbers</label>
           <input id="numbers" type="checkbox" checked>

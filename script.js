@@ -6,10 +6,15 @@ const symbols = ["~", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "-"
 
 const passwordEl = document.getElementById("password");
 const lengthEl = document.getElementById("length");
+const output = document.getElementById("output");
 const numbersEl = document.getElementById("numbers");
 const symbolsEl = document.getElementById("symbols");
 const generateBtn = document.getElementById("generate");
 const copyBtn = document.getElementById("copy");
+
+lengthEl.oninput = () => { 
+  output.textContent = lengthEl.value;
+}
   
 const generatePassword = () => {
   passwordEl.textContent = "";

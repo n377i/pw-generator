@@ -29,6 +29,32 @@ p {
   flex-direction: column;
 }
 
+.label {
+  text-transform: uppercase;
+}
+
+.slider {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.length {
+  flex: 1;
+  height: 4px;
+  background-color: #ccc;
+  border-radius: 8px;
+}
+
+.length::-webkit-slider-thumb,
+.length::-moz-range-thumb {
+  background-color: deeppink;
+  border: none;
+  border-radius: 8px;
+  width: 16px;
+  height: 16px;
+}
+
 .checkbox {
   display: flex;
   justify-content: space-between;
