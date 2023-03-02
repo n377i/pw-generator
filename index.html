@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Titel</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -14,21 +17,31 @@
       <p id="password" class="password"></p>
       <div class="settings">
         <label for="length" class="label">Length</label>
-        <span class="slider"><input id="length" class="length" type="range" min="8" max="32" value="20"> <output for="length" id="output">20</output></span>
+        <span class="slider"><input id="length" class="length" type="range" min="8" max="32" value="20" autocomplete="off">
+          <output for="length" id="output" class="output">20</output>
+        </span>
       </div>
       <div class="settings">
         <label class="label">Options</label>
-        <span class="checkbox">
-          <label for="numbers">Numbers</label>
-          <input id="numbers" type="checkbox" checked>
-        </span>
-        <span class="checkbox">
-          <label for="numbers">Symbols</label>
-          <input id="symbols" type="checkbox" checked>
-        </span>
+        <div class="checkbox">
+          <span>Numbers</span>
+          <label for="numbers" class="switch">
+            <input id="numbers" type="checkbox" checked autocomplete="off">
+            <span class="toggle"></span>
+          </label>
+        </div>
+        <div class="checkbox">
+          <span>Symbols</span>
+          <label for="symbols" class="switch">
+            <input id="symbols" type="checkbox" checked autocomplete="off">
+            <span class="toggle"></span>
+          </label>
+        </div>
       </div>
-      <button id="generate">Generate</button>
-      <button id="copy">Copy</button>
+      <div class="buttons">
+        <button id="generate" class="button">Generate</button>
+        <button id="copy" class="button">Copy</button>
+      </div>
     </div>
   </body>
 </html>
