@@ -36,9 +36,9 @@ generateBtn.addEventListener("click", generatePassword);
 
 const copyPassword = () => {
   navigator.clipboard.writeText(passwordEl.textContent);
-  copyBtn.textContent = "Copied";
+  copyBtn.innerHTML = '<img class="icon" src="img/copy.svg" alt="copy">Copied!';
   setTimeout(() => {
-    copyBtn.textContent = "Copy";
+    copyBtn.innerHTML = '<img class="icon" src="img/copy.svg" alt="copy">Copy';
   }, 500);
 }
 copyBtn.addEventListener("click", copyPassword);

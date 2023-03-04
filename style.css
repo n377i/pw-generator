@@ -30,6 +30,13 @@ h1 {
   background-color: var(--primary-color);
 }
 
+.icon {
+  position: relative;
+  top: 3px;
+  right: 6px;
+  height: 16px;
+}
+
 .password {
   display: flex;
   justify-content: center;
