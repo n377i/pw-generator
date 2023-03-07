@@ -58,7 +58,7 @@ h1 {
 
 .label {
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: bold;
   color: var(--headline-color);
   text-transform: uppercase;
   letter-spacing: 0.02rem;
@@ -163,7 +163,7 @@ input:checked+.toggle:before {
   cursor: pointer;
   flex: 1;
   font-size: 0.875rem;
-  font-weight: 700;
+  font-weight: bold;
   background-color: var(--secondary-color);
   border: none;
   border-radius: 8px;
